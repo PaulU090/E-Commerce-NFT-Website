@@ -1,0 +1,25 @@
+
+.title-text{
+    margin-left: 5px;
+    color: rgba(0,0,0,0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    
+
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.15);
+    text-align: center;
+
+    background-image: linear-gradient(white, rgb(160, 160, 160));
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.basic-text{
+    margin-left: 5px;
+    color: rgb(190, 190, 190);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 0.7em;
+}

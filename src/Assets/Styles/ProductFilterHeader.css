@@ -1,0 +1,22 @@
+.product-filter-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width:100%;
+    
+    height:80px;
+    margin-top: 20px;
+}
+
+.product-filter-header > .title-text{
+    font-size: 1.1em;
+    width: 320px;
+    padding-left: 16px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.product-filter-header > *:last-child{
+    margin-right: 10%;
+}

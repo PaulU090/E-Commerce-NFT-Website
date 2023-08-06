@@ -1,0 +1,97 @@
+.contact{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact > *{
+    margin: 5px;
+}
+
+
+.contact > .title-text:nth-child(1){
+    width: 100%;
+    right: auto;
+    height: auto;
+    font-size: 3vw;
+}
+
+.contact > .title-text:nth-child(3){
+    width: 80%;
+    left: 10%;
+    color: rgba(190,190,190,1);
+    margin-bottom: 30px;
+}
+
+.twoColumns-contact{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    right: auto;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+}
+
+.twoColumns-contact >*{
+    margin: 20px;
+    width: 50%;
+}
+
+.contact > .basic-text{
+    width: 80%;
+    left: 10%;
+    right: auto;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.twoColumns-contact img{
+    width: 50%;
+    left: 0%;
+    right: auto;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.twoColumns-contact > * {
+    align-items: center;
+}
+
+@media only screen and (max-width: 640px){
+    .twoColumns-contact{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        right: auto;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 20vh;
+        margin-top: 10vh;
+    }
+    
+    
+    .contact > .title-text:nth-child(1){
+        font-size: 5vw;
+    }
+
+    .contact .footer-column-bar{
+        width: 50%;
+    }
+
+    .twoColumns-contact img{
+        margin-top: 10px;
+        order: -1;
+        width: 100%;
+    }
+}

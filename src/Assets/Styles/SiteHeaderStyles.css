@@ -1,0 +1,140 @@
+.site-header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width:80vw;
+    height:80px;
+    left: 10%;
+    box-sizing: border-box;
+}
+
+.site-header > .title-text{
+    transform: translate(-15%, 0);
+    font-size: 3vw;
+    flex-shrink: 1;
+}
+
+.site-header > .cart-group{
+    display: flex;
+    flex-direction: row;
+    width:min-content;
+    align-content: center;
+
+}
+
+.site-header .cart-group > .title-text{
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.site-header .cart-group > .title-text:hover{
+    filter: brightness(1.2); 
+}
+
+.site-header .cart-group > *{
+    display: flex;
+    flex-direction: row;
+    width:60px;
+    align-content: center;
+}
+
+.site-header *{
+    align-self: center;
+}
+
+
+.navigation-menu{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 30px;
+    left: 15%;
+    right: auto;
+}
+
+.navigation-menu-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 10px;
+    height: 100%;
+}
+
+.navigation-menu-item * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: max-content;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.navigation-menu-item *:hover{
+    filter: brightness(1.2);
+}
+
+@media only screen and (max-width: 750px) {
+  
+    
+    .site-header > .title-text{
+        transform: translate(3%, 0);
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .site-header{
+        flex-direction: column;
+        justify-content: center;
+        min-height: min-content;
+        height: min-content;
+        margin-bottom: 5px;
+        width: 90%;
+        left: 10%;
+        right: auto;
+    }
+
+    .site-header > *
+    {
+        position: relative;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    .site-header > .title-text{
+        order: 0;
+        text-align: center;
+        width: 90%;
+        left: 10%;
+        font-size: 5vw;
+        right: auto;
+        justify-self: center;
+        transform: translate(-14%);
+    }
+
+    .site-header > .search-bar{
+        order: 1;
+        position: relative;
+        margin: 5px;
+        right: 20px;
+    }
+
+ 
+    .navigation-menu-item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .site-header .cart-group > *{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}

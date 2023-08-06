@@ -1,0 +1,237 @@
+:root {
+    --main-dark: #25272a;
+    --neu-dark: #090a0c;
+    --neu-light: #252a30;
+    --back-gradient: linear-gradient(
+      180deg,
+      rgba(62, 67, 76, 1) 0%,
+      rgba(30, 32, 36, 1) 100%
+    );
+    --front-gradient: linear-gradient(
+      180deg,
+      rgba(49, 56, 61, 1) 0%,
+      rgba(24, 25, 29, 1) 100%
+    );
+    --header-button-wrapper-gradient: linear-gradient(
+      135deg,
+      rgba(43, 47, 52, 1) 0%,
+      rgba(49, 56, 61, 1) 100%
+    );
+    --header-button-wrapper-neu-shadows: 0.2vw 0.2vw 0.7vw #16191b,
+      -0.2vw -0.2vw 0.7vw rgba(152, 174, 190, 1);
+    --header-pressed-wrapper-gradient: linear-gradient(
+      135deg,
+      rgba(218, 77, 12, 1) 0%,
+      rgba(180, 54, 19, 1) 100%
+    );
+    --header-normal-button-front-gradient: linear-gradient(
+      135deg,
+      rgba(41, 47, 52, 1) 0%,
+      rgba(22, 25, 29, 1) 100%
+    );
+    --header-pressed-button-front-gradient: linear-gradient(
+      135deg,
+      rgba(222, 57, 19, 1) 0%,
+      rgba(234, 81, 14, 1) 100%
+    );
+    --header-pressed-button-inset-shadows: inset 0.75vw 0.75vw 0.75vw
+      rgba(0, 0, 0, 0.3);
+    --main-cover-wrapper-gradient: linear-gradient(
+      135deg,
+      rgba(31, 36, 40, 1) 0%,
+      rgba(22, 23, 25, 1) 100%
+    );
+    --main-cover-neu-shadows: 0.5vw 0.5vw 0.5vw #1a1e20,
+      -0.5vw -0.5vw 0.75vw #363e44;
+    --slider-track-gradient: linear-gradient(
+      90deg,
+      rgba(217, 61, 7, 1) 0%,
+      rgba(147, 113, 20, 1) 100%
+    );
+  
+    --controls-normal-button-wrapper-gradient: linear-gradient(
+      135deg,
+      rgba(32, 37, 41, 1) 0%,
+      rgba(22, 24, 25, 1) 100%
+    );
+    --controls-button-wrapper-neu-shadows: 0.2vw 0.2vw 0.5vw #16191b,
+      -0.2vw -0.2vw 0.5vw #363e44;
+    --controls-normal-button-front-gradient: linear-gradient(
+      135deg,
+      rgba(40, 43, 48, 1) 0%,
+      rgba(29, 32, 35, 1) 100%
+    );
+    --controls-normal-button-inset-shadows: inset 0 0 0.3vw
+      rgba(255, 255, 255, 0.1);
+    --controls-pressed-button-wrapper-gradient: linear-gradient(
+      135deg,
+      rgba(214, 78, 12, 1) 0%,
+      rgba(166, 47, 19, 1) 100%
+    );
+    --controls-pressed-button-front-gradient: linear-gradient(
+      135deg,
+      rgba(183, 29, 16, 1) 0%,
+      rgba(236, 86, 12, 1) 100%
+    );
+    --controls-pressed-button-inset-shadows: inset 0.75vw 0.75vw 0.75vw
+      rgba(0, 0, 0, 0.2);
+    --main-icon-text-color: rgba(255, 255, 255, 0.5);
+  }
+
+.neomorphic-button-flat-unpressed > img{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+
+    width: 50%;
+    height: 50%;
+    background: transparent;
+    filter: drop-shadow(0.1px 1px 1px rgba(0, 0, 0, 1));
+}
+
+.neomorphic-button-flat-unpressed{
+    position: relative;
+    width: 56px;
+    height: 56px;
+    left: 3px;
+    top: 3px;
+    background: var(--header-normal-button-front-gradient);/*linear-gradient(144.05deg, #32383E -69.07%, #17191C 122.22%);*/
+    box-shadow: -4px -2px 16px rgba(195, 200, 205, 0.08), 4px 4px 18px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.neomorphic-button-flat-unpressed::before{
+    background: var(--header-button-wrapper-gradient);
+    box-shadow: var(--controls-button-wrapper-neu-shadows);
+
+    box-sizing: border-box;
+    content: '';
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    position: absolute;
+    z-index:-1;
+    
+    border-radius: 16px;
+}
+
+
+.neomorphic-button-flat-pressed{
+    position: relative;
+    width: 56px;
+    height: 56px;
+    left: 3px;
+    top: 3px;
+    box-sizing: border-box;
+    
+    background: linear-gradient(303.77deg, #2C333A -71.57%, #1C1E22 59.28%, #121416 100%);
+    box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.01), inset 3px 3px 5px rgba(0, 0, 0, 0.3), 4px 4px 18px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.neomorphic-button-flat-red-unpressed{
+    position: relative;
+    width: 56px;
+    height: 56px;
+    left: 3px;
+    top: 3px;
+
+    background: linear-gradient(144.05deg, #32383E -69.07%, #17191C 122.22%);
+    box-shadow: -4px -2px 16px rgba(195, 200, 205, 0.08), 4px 4px 18px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.neomorphic-button-flat-pressed::before{
+    background: var(--header-button-wrapper-gradient);
+    box-shadow: var(--controls-button-wrapper-neu-shadows);
+
+    box-sizing: border-box;
+    content: '';
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    position: absolute;
+    z-index:-1;
+    
+    border-radius: 16px;
+}
+
+.neomorphic-button-flat-pressed > img{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+
+    width: 50%;
+    height: 50%;
+    background: transparent;
+    filter: drop-shadow(-1px -1px 2px rgba(255, 255, 255, 0.2)) drop-shadow(1px 1px 1px rgba(0, 0, 0, 1));
+
+
+}
+
+body{
+    background: rgba(29, 31, 35, 1);
+}
+
+.neomorphic-card{
+    box-sizing: border-box;
+    cursor:pointer;
+    aspect-ratio: 4 / 6;
+    position: relative;
+    left: 0%;
+    padding: 10px;
+    
+    background: linear-gradient(160.55deg, #353A40 -3.02%, #121416 93.08%);
+    box-shadow: 36px 12px 64px rgba(2, 3, 3, 0.7), -12px -20px 56px rgba(232, 237, 243, 0.05), inset -16px -6px 80px rgba(248, 249, 249, 0.03);
+    border-radius: 24px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.image-display{
+    width: 90%;
+    height: auto;
+    position: relative;
+
+    margin-top: 15px;
+}
+
+.image-display > img{
+    z-index: 1;
+    border-radius: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+
+    height: 100%;
+}
+
+/*Wrapper for image for fitting to card*/
+.image-display::before{
+    background: var(--header-button-wrapper-gradient);
+    box-shadow: var(--controls-button-wrapper-neu-shadows);
+
+    box-sizing: border-box;
+    content: '';
+    top: -1px;
+    left: -1px;
+    bottom: -0.5px;
+    right: -1px;
+    position: absolute;
+    z-index:-1;
+    
+    border-radius: 16px;
+}
+

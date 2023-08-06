@@ -1,0 +1,95 @@
+.our-story{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+    left: 15%;
+    margin-top: 50px;
+}
+
+/*We will use 2-column structure. Right column will just be an image*/
+.our-story-left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    align-items: start;
+}
+
+.our-story-left > .title-text{
+    font-size: 1.6em;
+    text-align: left;
+}
+
+.our-story-left > .basic-text{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.85em;
+}
+
+.read-more-button{
+    position: relative;
+    width: 80px;
+    height: 30px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    filter: brightness(1);
+}
+.read-more-button:hover{
+    filter: brightness(1.2);
+}
+
+.read-more-button > *{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    filter: brightness(1.2);
+    pointer-events: none;
+}
+
+
+.our-story > img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .our-story{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 70%;
+        left: 15%;
+        margin-top: 50px;
+    }
+    
+    .our-story > *{
+        margin: 5px;
+        width: 100%;
+    }
+
+    .our-story> img{
+        order: 0;
+        width: 100%;
+    }
+
+    .our-story-left{
+        order: 1;
+    }
+    
+}

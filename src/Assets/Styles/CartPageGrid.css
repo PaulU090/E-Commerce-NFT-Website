@@ -1,0 +1,35 @@
+
+.cart-grid {
+    position: relative;
+    display: grid;
+    overflow-y: visible;
+    
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-flow: row;
+    width: 80%;
+    left: 10%;
+    right: auto;
+    
+    gap: 0px;
+
+    box-sizing: border-box;
+    min-height: max-content;
+}
+
+.cart-grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    align-items: center;
+}
+
+
+.cart-shipping-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    align-items: center;
+    grid-column: span 2;
+}

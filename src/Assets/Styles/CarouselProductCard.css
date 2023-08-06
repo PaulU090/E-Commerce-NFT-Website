@@ -1,0 +1,21 @@
+.carousel-product-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.carousel-product-card > img{
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.carousel-product-card > .title-text{
+    text-align: left;
+}
+
+.carousel-product-card > .basic-text{
+    text-align: left;
+}
