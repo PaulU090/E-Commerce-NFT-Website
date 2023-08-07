@@ -5,7 +5,7 @@ A dynamic e-commerce platform inspired by the NFT trend. Crafted using JavaScrip
 
 # Overview
 
-For this project, our team, as part of the CS180 Intro to Software Engineering course at the University of California, Riverside, decided to create a full-stack E-commerce web application that allows users to purchase NFTs. Our user interface will have a similar design as those of other companies. Users will be able to sign in to their unqiue account and make purchases. The web application will also allow users to be able to view their purchase history and view the items in their cart. Payment information will also be handled so that payments can be made successfully. 
+The is a full-stack E-commerce web application that facilitates users in purchasing NFTs. The user interface is designed in line with some of the industry's leading platforms. Users have the capability to sign into their unique accounts, make purchases, view their transaction history, and inspect the items in their cart. All aspects of payment information are adeptly managed to ensure seamless transactions.
 
 ## Languages
 
